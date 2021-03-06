@@ -1,4 +1,18 @@
-h1 {
-    background-color: indigo;
-    padding: 100px;
+:root {
+    --color01:#326148;
+    --color02:#81A78C;
+    --color03:#EEE5CF;
+    --color04:#FAFAFA;
+    --color05:#DAB162;
+    --color06:#091B21;    
+}
+
+
+body {
+    background-image: url(/Users/crispydesignstudio/Portfolio/Project-1/assets/images/TOPOGRAPHICAL_HUGE.svg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
