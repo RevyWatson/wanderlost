@@ -2,3 +2,8 @@ h1 {
     background-color: indigo;
     padding: 100px;
 }
+
+#cityMapId{
+    height: 500px;
+    width: 700px;
+}
