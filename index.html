@@ -13,8 +13,8 @@
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>  
-  <!-- Foundation Compressed CSS -->
+        crossorigin=""></script>
+    <!-- Foundation Compressed CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
         integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -22,28 +22,26 @@
 </head>
 
 <body>
-    
+
     <div class="medium-grid-frame">
         <header>
             <h1 class="text-center">Wanderl[o]st</h1>
         </header>
         <div class="grid-container">
             <div class="grid-y">
-                <div class="grid-x">
-                    <div class="cell">
-                        <input type="serach" placeholder="City or Trail System" id="destination">
-                        <button class="button">Search <i class="fas fa-search-location"></i></button>
-                    </div>
-                    <div>
-                        <figure>
-                            <div class="cell" id="cityMapId"></div>
-                        </figure>
-                    </div>
-                    <div class="cell">
-                        <figure>
-                            Weather Data
-                        </figure>
-                    </div>
+                <div class="cell">
+                    <input type="search" placeholder="City or Trail System" id="destination">
+                    <button class="button">Search <i class="fas fa-search-location"></i></button>
+                </div>
+                <div>
+                    <figure class="responsive-embed">
+                        <div class="cell margin-x" id="cityMapId"></div>
+                    </figure>
+                </div>
+                <div class="cell">
+                    <figure>
+                        Weather Data
+                    </figure>
                 </div>
             </div>
         </div>
