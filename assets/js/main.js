@@ -7,6 +7,7 @@ const userMap = L.map('cityMapId').setView([51.505, -0.09], 13);
 //conecting url for image tiles
 const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const tiles = L.tileLayer(tileUrl, [attribution]);
+const apiUrl =
 //display chosen photo tiles to map
 tiles.addTo(userMap);
 //openstree api data retrieval function
