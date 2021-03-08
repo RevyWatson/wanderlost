@@ -18,16 +18,6 @@ const tiles = L.tileLayer(tileUrl, [attribution]);
 
 //function adding tiles to map
 
-//copywrite attribution reqs
-const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
-//variable data needed to display map
-const userMap = L.map('cityMapId').setView([51.505, -0.09], 13);
-//conecting url for image tiles
-const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-const tiles = L.tileLayer(tileUrl, [attribution]);
-const apiUrl =
-//display chosen photo tiles to map
-
 tiles.addTo(userMap);
 //openstree api data retrieval function
 function getApi(userCity) {
@@ -76,8 +66,7 @@ function logSubmit(event) {
 //function that retrieves data from third-party api for a specific location
 function getApi(userCity) {
   console.log(userCity);
-  const url = "https://api.openweathermap.org/data/2.5/weather?q=" + userCity + "&units=imperial&appid=23862a5f23b4f0870e633a28562d8b34";
-  fetch(url, {
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=" + userCity + "&units=imperial&appid=23862a5f23b4f0870e633a28562d8b34";  fetch(url, {
     method: "GET",
     withCredentials: true
   })
@@ -117,3 +106,6 @@ function getApi(userCity) {
 
 getApi();
 
+
+
+// This is a check note to make sure it copied over
