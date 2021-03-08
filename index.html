@@ -26,35 +26,41 @@
     <div class="medium-grid-frame">
         <header>
             <h1 class="text-center">Wanderl[o]st</h1>
+            <div class="grid-container">
+                <div class="grid-x grid-margin-x">
+                <input type="search" placeholder="City or Trail System" id="destination" class="cell small-4 large-offset-2">
+                <button class="button cell shrink">Search <i class="fas fa-search-location"></i></button>
+            </div>
+            </div>
         </header>
         <div class="grid-container">
-            <div class="grid-y">
-                <div class="cell">
-                    <input type="search" placeholder="City or Trail System" id="destination">
-                    <button class="button">Search <i class="fas fa-search-location"></i></button>
-                </div>
-                <div>
+            <div class="grid-x grid-margin-x grid-margin-y">
+                <div class="cell large-auto">
                     <figure class="responsive-embed">
-                        <div class="cell margin-x" id="cityMapId"></div>
+                        <div width="300" height="300" id="cityMapId"></div>
+                        <section>Trail Descriptions Here</section>
                     </figure>
                 </div>
-                <div class="cell">
+                <div class="cell large-auto">
                     <figure>
-                        Weather Data
+                        Weather Image (if we have/need one?) Here
                     </figure>
+                    <section>
+                        Weather Data and Descriptions Here
+                    </section>
                 </div>
             </div>
         </div>
         <div class="grid-container">
-            <article class="grid-y">
-                <div class="cell">
+            <article class="grid-x grid-margin-x grid-margin-y">
+                <div class="cell large-auto">
                     <section>
-                        Lodging
+                        Lodging Info Here
                     </section>
                 </div>
-                <div class="cell">
+                <div class="cell large-auto">
                     <section>
-                        Dinning
+                        Dinning Info Here
                     </section>
                 </div>
             </article>
