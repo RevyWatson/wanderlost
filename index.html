@@ -33,7 +33,7 @@
             <div class="grid-y">
                 <div class="grid-x">
                     <div class="cell">
-                        <input type="serach" placeholder="City or Trail System">
+                        <input type="search" placeholder="City or Trail System" id="locationInput">
                         <button class="button">Search <i class="fas fa-search-location"></i></button>
                     </div>
                     <div class="cell">
@@ -43,7 +43,28 @@
                     </div>
                     <div class="cell">
                         <figure>
-                            Weather Data
+                            <div>
+                                <form id="search-form" method="POST">
+                                    <h2>Location</h2>
+                                    <label for="search-text">Where do you live?</label>
+                                    <button type="submit">Submit</button>
+                                    <p id="log"></p>
+                                    <input type="text" placeholder="Search..." name="search-text" id="cityInput" />
+                                </form>
+                            </div>
+                            <div class="row flex-container" id="widget">
+                                <div id="current">
+                                    <h3>Current Weather</h3>
+                                    <p id="name">name</p>
+                                    <div>
+                                        <i id="main" class=" "></i><br>
+                                    </div><br>
+                                    <p id="temp">temp</p>
+                                    <p id="humidity">humidity</p>
+                                    <p id="wind-speed">wind-speed</p>
+                                    <p id="uv-index">uv-index</p>
+                                </div><br>
+                            </div>
                         </figure>
                     </div>
                 </div>
