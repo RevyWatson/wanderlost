@@ -106,3 +106,6 @@ function getApi(userCity) {
 
 getApi();
 
+
+
+// This is a check note to make sure it copied over
