@@ -34,6 +34,42 @@
             </div>
         </header>
         <div class="grid-container">
+
+            <div class="grid-y">
+                <div class="grid-x">
+                    <div class="cell">  
+                            <div>
+                                <form id="search-form" method="POST">
+                                    <input type="search" placeholder="City or Trail System" id="cityInput">
+                                    <button class="button">Search <i class="fas fa-search-location"></i></button>
+                                </form>
+                            </div>
+                       
+                    </div>
+                    <div class="cell">
+                        <figure>
+                            Trail Map
+                        </figure>
+                    </div>
+                    <div class="cell">
+                        <figure>
+                          
+                            <div class="row flex-container" id="widget">
+                                <div id="current">
+                                    <h3>Current Weather</h3>
+                                    <p id="name">name</p>
+                                    <div>
+                                        <i id="main" class=" "></i><br>
+                                    </div><br>
+                                    <p id="temp">temp</p>
+                                    <p id="humidity">humidity</p>
+                                    <p id="wind-speed">wind-speed</p>
+                                    <p id="uv-index">uv-index</p>
+                                </div><br>
+                            </div>
+                        </figure>
+                    </div>
+
             <div class="grid-x grid-margin-x grid-margin-y">
                 <div class="cell large-auto">
                     <figure class="responsive-embed">
@@ -48,6 +84,7 @@
                     <section>
                         Weather Data and Descriptions Here
                     </section>
+
                 </div>
             </div>
         </div>
