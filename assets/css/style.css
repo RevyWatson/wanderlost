@@ -16,7 +16,7 @@ body {
     background-repeat: no-repeat;
 }
 
-h1 {
+h1, h3 {
     color: var(--color04);
     background-color: var(--color01);
     padding: 25px;
@@ -29,4 +29,25 @@ h1 {
 
 button {
     background-color: var(--color03);
+}
+
+section {
+    background-color: var(--color03);
+    padding: 10px;
+}
+
+article {
+    background-color: var(--color02);
+    padding: 10px;
+}
+
+p {
+    background-color: var(--color02);
+    padding: 10px;
+}
+
+figure {
+        background-color: var(--color02);
+        padding: 10px;
+        margin: 20px 10px;
 }
