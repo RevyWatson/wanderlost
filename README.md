@@ -20,12 +20,13 @@ This is the first collaberative group assigmnent from the Full Stack Web Develop
 * [Alissa Garzoni](https://github.com/RevyWatson)
 
 ## Our Vision
-Our group shares a common love of exploring the ourdoors and hiking. As we shared stories of our separate adventures wandering the wilds of this world we quickly realized that we've all experienced getting lost and accidentally roaming off trail. Despite the use of trail guide books and provided park pamplets there's still plenty of room for one to get lost while hiking. Especially if a trail systems isn't properly marked or lacks signage. It became clear that we wanted to build an application that would provide hiking trail maps and accurate weather updates. After a long day of hiking and exploring one always looks forward to a good meal and a safe comfortable place to sleep. That's why we decided that the application should also provide information for nearby lodging (hotels, motels, airbnb, etc) and local dinning options.
+Our group shares a common love of exploring the ourdoors and hiking. As we shared stories of our separate adventures wandering the wilds of this world, we quickly realized that we've all experienced getting lost and accidentally roaming off trail. Despite the use of trail guide books and provided park pamplets there's still plenty of room for one to get lost while hiking. Especially if a trail systems isn't properly marked or lacks signage. It became clear that we wanted to build an application that would provide hiking trail maps and accurate weather updates. After a long day of hiking and exploring one always looks forward to a good meal and a safe comfortable place to sleep. That's why we decided that the application should also provide information for nearby lodging (hotels, motels, airbnb, etc) and local dinning options.
 
-##
-This application is built using dynamic HTML, CSS, and powered by JavaScript. We chose to utilize the CSS framework [Foundation](https://get.foundation/) by ZURB Inc. For weather reports we used [OpenWeather](https://openweathermap.org/)
+## Technology Utilized
+This application was built using dynamic HTML, CSS, and is powered by JavaScript. We chose to utilize the CSS framework [Foundation](https://get.foundation/) by ZURB Inc. For the weather reports we used the API [OpenWeather](https://openweathermap.org/). To find trail maps we used the API [name here](website here). For finding nearby lodging options we used the API [name here](website here). To search for nearby dining options we used the API [name here](website here).
 
-
+## Future Developement
+There is much room for this application to grow and we have plans to expand its capabilities to include off-road trail maps and...
 
 What we need in this file:
 -unique name

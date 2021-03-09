@@ -79,7 +79,7 @@ function getApi(userCity) {
       const uvVal = data["coord"]["lat"];
       const uviVal = data["coord"]["lon"];
 
-      document.getElementById("name").innerHTML = "name: " + nameVal;
+      document.getElementById("name").innerHTML = "Name: " + nameVal;
       console.log("nameVal");
       document.getElementById("temp").innerHTML = "Tempature: " + tempVal;
       document.getElementById("humidity").innerHTML = "Humidity: " + humVal;
@@ -91,10 +91,10 @@ function getApi(userCity) {
       console.log(nameVal, tempVal, humVal, windVal, uvVal, uviVal);
       if (windVal > 5) {
         document.getElementById("main").className = "fas fa-wind";
-        document.getElementById("main").innerHTML = "feels windy";
+        document.getElementById("main").innerHTML = "Feels windy";
       } else {
         document.getElementById("main").className = "fas fa-sun";
-        document.getElementById("main").innerHTML = "feels nice";
+        document.getElementById("main").innerHTML = "Feels nice";
       }
     })
     .catch(function (error) {
