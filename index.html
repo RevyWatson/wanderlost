@@ -22,85 +22,69 @@
 </head>
 
 <body>
-
     <div class="medium-grid-frame">
         <header>
-            <h1 class="text-center"><i class="fas fa-hiking"></i> Wanderl[o]st <i class="fas fa-hiking fa-flip-horizontal"></i>
+            <h1 class="text-center">
+                <i class="fas fa-hiking"></i>
+                Wanderl[o]st
+                <i class="fas fa-hiking fa-flip-horizontal"></i>
             </h1>
             <div class="grid-container">
-                <div class="grid-x grid-margin-x">
-                <input type="search" placeholder="City or Trail System" id="destination" class="cell small-4 large-offset-2">
-                <button class="button cell shrink">Search <i class="fas fa-search-location"></i></button>
-            </div>
+                <div class="grid-x grid-margin-x grid-margin-y">
+                    <form id="search-form" method="POST">
+                    <input type="search" placeholder="City or Trail System" id="cityInput"
+                        class="cell small-4 large-offset-2">
+                    <button class="button cell shrink">Search <i class="fas fa-search-location"></i></button>
+                    </form>
+                </div>
             </div>
         </header>
-        <div class="grid-container">
-            <div class="grid-y">
-                <div class="grid-x">
-                    <div class="cell">  
-                            <div>
-                                <form id="search-form" method="POST">
-                                    <input type="search" placeholder="City or Trail System" id="cityInput">
-                                    <button class="button">Search <i class="fas fa-search-location"></i></button>
-                                </form>
-                            </div>
-                       
-                    </div>
-                    <div class="cell">
-                        <figure>
-                            (Trail Map) <i class="fas fa-map-signs"></i>
-                        </figure>
-                    </div>
-                    <div class="cell">
-                        <figure>
-                          
-                            <div class="row flex-container" id="widget">
-                                <div id="current">
-                                    <h3>Current Weather</h3>
-                                    <p id="name">name</p>
-                                    <div>
-                                        <i id="main" class=" "></i><br>
-                                    </div><br>
-                                    <p id="temp">temp</p>
-                                    <p id="humidity">humidity</p>
-                                    <p id="wind-speed">wind-speed</p>
-                                    <p id="uv-index">uv-index</p>
-                                </div><br>
-                            </div>
-                        </figure>
-                    </div>
-
+        <div class="grid-container fluid">
             <div class="grid-x grid-margin-x grid-margin-y">
                 <div class="cell large-auto">
+                    <figcaption>
+                        <h3>Trail Map <i class="fas fa-map-signs"></i></h3></i>
+                    </figcaption>
                     <figure class="responsive-embed">
-
-                        <div width="300" height="300" id="cityMapId"></div>
-                        <section>Trail Descriptions Here <i class="fas fa-route"><i class="fas fa-info-circle"></i></i></section>
+                        <div id="cityMapId"></div>
+                        <section>(Trail Descriptions Here) <i class="fas fa-route">
+                                <i class="fas fa-info-circle">
+                            </i></i></section>
                         <div id="cityMapId"></div>
                     </figure>
-                    <section>Trail Descriptions Here</section>
                 </div>
                 <div class="cell large-auto">
-                    <figure>
-                        Weather Image (if we have/need one?) Here
-                    </figure>
                     <section>
-                        Weather Data and Descriptions Here
+                        <div class="" id="widget">
+                            <div id="current">
+                                <h3>Current Weather</h3>
+                                <p id="name">Name: </p>
+                                <div>
+                                    <i id="main" class=" "></i>
+                                </div>
+                                <p id="temp">Temperature: </p>
+                                <p id="humidity">Humidity: </p>
+                                <p id="wind-speed">Wind-Speed: </p>
+                                <p id="uv-index">UV-Index: </p>
+                                <figure>
+                                    (Weather Image (if we have/need one?) Here)
+                                </figure>
+                            </div>
+                        </div>
                     </section>
-
                 </div>
             </div>
         </div>
-        <div class="grid-container">
+        <div class="grid-container fluid">
             <article class="grid-x grid-margin-x grid-margin-y">
                 <div class="cell large-auto">
                     <section>
-                        (Lodging Info Here) <i class="fas fa-bed"></i>
+                        <h3>Lodging <i class="fas fa-bed"></i></h3>
                     </section>
                 </div>
                 <div class="cell large-auto">
                     <section>
-                        (Dinning Info Here) <i class="fas fa-utensils"></i>
+                        <h3>Dining<i class="fas fa-utensils"></i></h3>
                     </section>
                 </div>
             </article>
