@@ -30,13 +30,11 @@
                 <i class="fas fa-hiking fa-flip-horizontal"></i>
             </h1>
             <div class="grid-container">
-                <div class="grid-x grid-margin-x grid-margin-y">
-                    <form id="search-form" method="POST">
+                <form id="search-form" method="POST" class="grid-x grid-margin-x grid-margin-y">
                     <input type="search" placeholder="City or Trail System" id="cityInput"
-                        class="cell small-4 large-offset-2">
-                    <button class="button cell shrink">Search <i class="fas fa-search-location"></i></button>
-                    </form>
-                </div>
+                        class="cell small-4 large-offset-auto">
+                    <button class="success button cell shrink">Search <i class="fas fa-search-location"></i></button>
+                </form>
             </div>
         </header>
         <div class="grid-container fluid">
@@ -49,7 +47,7 @@
                         <div id="cityMapId"></div>
                         <section>(Trail Descriptions Here) <i class="fas fa-route">
                                 <i class="fas fa-info-circle">
-                            </i></i></section>
+                                </i></i></section>
                         <div id="cityMapId"></div>
                     </figure>
                 </div>
