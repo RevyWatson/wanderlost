@@ -63,7 +63,7 @@ function logSubmit(event) {
 function getApi(userCity) {
   console.log(userCity);
   const cityWeatherUrl =
-    "https://api.openweathermap.org/data/2.5/weather?q=" + userCity + "&appid=b727c2bc7f7747620cc5cb2ff48d4ebe";
+    "https://api.openweathermap.org/data/2.5/weather?q=" + userCity + "&units=imperial&appid=b727c2bc7f7747620cc5cb2ff48d4ebe";
   fetch(cityWeatherUrl, {
     method: "GET",
     withCredentials: true,
