@@ -16,15 +16,23 @@ body {
     background-repeat: no-repeat;
 }
 
-h1, h3 {
+h1 {
+        color: var(--color04);
+        background-color: var(--color01);
+        padding: 25px;
+}
+
+h3 {
     color: var(--color04);
     background-color: var(--color01);
     padding: 25px;
+    border-radius: 16px;
 }
 
 #cityMapId{
     height: 500px;
     width: 700px;
+    border-radius: 16px;
 }
 
 button {
@@ -33,7 +41,9 @@ button {
 
 section {
     background-color: var(--color03);
+    border-radius: 16px;
     padding: 10px;
+    border-radius: 16px;
 }
 
 article {
@@ -44,10 +54,11 @@ article {
 p {
     background-color: var(--color02);
     padding: 10px;
+    border-radius: 16px;
 }
 
 figure {
-        background-color: var(--color02);
+        /* background-color: var(--color02); */
         padding: 10px;
         margin: 20px 10px;
 }
