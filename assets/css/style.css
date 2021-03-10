@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(/Users/crispydesignstudio/Portfolio/Project-1/assets/images/TOPOGRAPHICAL_HUGE.svg);
+    background-image: url('../images/TOPOGRAPHICAL_HUGE.svg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
