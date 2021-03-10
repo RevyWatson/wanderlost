@@ -59,6 +59,10 @@ function logSubmit(event) {
   getApi(userCity);
 }
 
+if(cityName){
+  cityInput.value = cityName;
+}
+
 //function that retrieves data from third-party api for a specific location
 function getApi(userCity) {
   console.log(userCity);
