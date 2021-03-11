@@ -48,6 +48,12 @@ span {
   width: 700px;
 }
 
+#newCityMapId{
+    height: 500px;
+    width: 700px;
+    border-radius: 16px;
+}
+
 button {
   background-color: var(--color03);
 }
