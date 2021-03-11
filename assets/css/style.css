@@ -1,38 +1,51 @@
 :root {
-    --color01:#326148;
-    --color02:#81A78C;
-    --color03:#EEE5CF;
-    --color04:#FAFAFA;
-    --color05:#DAB162;
-    --color06:#091B21;    
+  --mainText: "Alegreya SC", serif;
+  --spanText: "Spirax", cursive;
+  --color01: #326148;
+  --color02: #81a78c;
+  --color03: #eee5cf;
+  --color04: #fafafa;
+  --color05: #dab162;
+  --color06: #091b21;
 }
 
 body {
-    background-image: url('../images/TOPOGRAPHICAL_HUGE.svg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
+  font-family: var(--mainText);
+  background-image: url("../images/TOPOGRAPHICAL_HUGE.svg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
-        color: var(--color04);
-        background-color: var(--color01);
-        padding: 25px;
+  font-family: var(--mainText);
+  color: var(--color04);
+  background-color: var(--color01);
+  padding: 25px;
 }
 
 h3 {
-    color: var(--color04);
-    background-color: var(--color01);
-    padding: 25px;
-    border-radius: 16px;
+  font-family: var(--mainText);
+  color: var(--color04);
+  background-color: var(--color01);
+  padding: 25px;
+  border-radius: 16px;
 }
 
-#cityMapId{
-    height: 500px;
-    width: 700px;
-    border-radius: 16px;
+h5 {
+  font-family: var(--mainText);
+}
+
+span {
+  font-family: var(--spanText);
+  font-weight: bold;
+}
+
+#cityMapId {
+  height: 600px;
+  width: 700px;
 }
 
 #newCityMapId{
@@ -42,31 +55,39 @@ h3 {
 }
 
 button {
-    background-color: var(--color03);
+  background-color: var(--color03);
 }
 
 section {
-    background-color: var(--color03);
-    border-radius: 16px;
-    padding: 10px;
-    border-radius: 16px;
+  background-color: var(--color03);
+  border-radius: 16px;
+  padding: 10px;
+  border-radius: 16px;
 }
 
 article {
-    background-color: var(--color02);
-    padding: 10px;
+  padding: 10px;
 }
 
 p {
-    background-color: var(--color02);
-    padding: 10px;
-    border-radius: 16px;
+  font-family: var(--mainText);
+  background-color: var(--color02);
+  padding: 10px;
+  border-radius: 16px;
 }
 
 figure {
-        /* background-color: var(--color02); */
-        padding: 10px;
-        margin: 20px 10px;
+  /* background-color: var(--color02); */
+  padding: 10px;
+  margin: 20px 10px;
 }
 
-/* This is to get everything synced up again 03/08/21 1020pm */
+.title {
+    font-family: var(--spanText);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+form {
+    margin-top: 1.5%;
+}
