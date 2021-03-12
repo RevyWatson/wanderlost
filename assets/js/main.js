@@ -111,6 +111,7 @@ function logSubmit(event) {
   let userCity = cityInput.value;
   localStorage.setItem("cityName", userCity);
   getApi(userCity);
+  getTrails();
 }
 
 if(cityName){
@@ -145,10 +146,10 @@ function getApi(userCity) {
       document.getElementById("humidity").innerHTML = "Humidity: " + humVal;
       document.getElementById("wind-speed").innerHTML =
         "Wind Speed: " + windVal;
-      document.getElementById("uv-index").innerHTML =
-        "UV Index: " + uvVal + " " + uviVal;
+      //document.getElementById("uv-index").innerHTML =
+        //"UV Index: " + uvVal + " " + uviVal;
 
-      console.log(nameVal, tempVal, humVal, windVal, uvVal, uviVal);
+      console.log(nameVal, tempVal, humVal, windVal, newLat, newLong);
       if (windVal > 5) {
         document.getElementById("main").className = "fas fa-wind";
         document.getElementById("main").innerHTML = "Feels windy";
