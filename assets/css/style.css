@@ -20,6 +20,7 @@ body {
 }
 
 h1 {
+  background-image: linear-gradient(var(--color01), var(--color06));
   font-family: var(--mainText);
   color: var(--color04);
   background-color: var(--color01);
