@@ -1,12 +1,13 @@
 console.log("Too much time on our hands");
+
 //map stuff
 //variables for map coordinates
 const lat = 42.3314;
 const long = -83.0458;
 const zoom = 10;
 
-//variable for map
-const userMap = L.map("cityMapId").setView([lat, long], zoom);
+//variable for displaying map on web page
+let userMap = L.map("cityMapId").setView([lat, long], zoom);
 
 //attribution variable
 const attribution =
@@ -17,9 +18,9 @@ const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 const tiles = L.tileLayer(tileUrl, [attribution]);
 
 //function adding tiles to map
-
 tiles.addTo(userMap);
-//openstree api data retrieval function
+
+//openstreet api data retrieval function
 function getApi(userCity) {
   console.log(userCity);
   let destinationEl = document.getElementById("destination");
@@ -99,13 +100,13 @@ function getTrails() {
 
 const cityInput = document.querySelector("#cityInput");
 const form = document.getElementById("search-form");
-
 let cityName = localStorage.getItem("cityName");
 let cities = [];
 
 //listen for when submit button is clicked
 form.addEventListener("submit", logSubmit);
 
+//when button clicked or enter is pressed then do these things
 function logSubmit(event) {
   event.preventDefault();
   let userCity = cityInput.value;
@@ -113,7 +114,7 @@ function logSubmit(event) {
   getApi(userCity);
 }
 
-if(cityName){
+if (cityName) {
   cityInput.value = cityName;
 }
 
@@ -147,8 +148,8 @@ function getApi(userCity) {
         "Wind Speed: " + windVal;
       document.getElementById("uv-index").innerHTML =
         "UV Index: " + uvVal + " " + uviVal;
-
       console.log(nameVal, tempVal, humVal, windVal, uvVal, uviVal);
+      //create weather icons
       if (windVal > 5) {
         document.getElementById("main").className = "fas fa-wind";
         document.getElementById("main").innerHTML = "Feels windy";
@@ -157,11 +158,16 @@ function getApi(userCity) {
         document.getElementById("main").innerHTML = "Feels nice";
       }
     })
+   
     .catch(function (error) {
       console.log(error);
     });
-
 }
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+//trail stuff
 
 
 // This is a check note to make sure it copied over
