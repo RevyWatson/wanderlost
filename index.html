@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
         integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Wanderlost</title>
 </head>
@@ -47,10 +47,10 @@
                 <section>
                     <h3><span>T</span>rail <span>M</span>ap <i class="fas fa-map-signs"></i></h3></i>
                     <figure class="responsive-embed">
-                        <div id="cityMapId"></div>
+                        <div id="cityMapId" alt="Zoomable map showing whatever city entered in search"></div>
                     </figure>
                     <figcaption>
-                        <h5 id="trailName"><i class="fas fa-route"><i class="fas fa-info-circle"></i></i> Name of Trail: 
+                        <h5 id="trailName"><i class="fas fa-route"><i class="fas fa-info-circle"></i></i> Trails: 
                         </h5>
                         <div id="miles">Miles: </div>
                         <div id="status">Trail Status: </div>
@@ -64,12 +64,13 @@
                         <div id="current">
                             <h3><span>C</span>urrent <span>W</span>eather</h3>
                             <p id="name">Name: </p>
-                            <div>
-                                <i id="main" class=" "></i>
-                            </div>
                             <p id="temp">Temperature: </p>
                             <p id="humidity">Humidity: </p>
                             <p id="wind-speed">Wind-Speed: </p>
+                            <p id="uv-index">UV Index:</p>
+                            <div>
+                                <!-- <i id="main" class=" "></i> -->
+                            </div>
                         </div>
                     </div>
                 </section>

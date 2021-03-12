@@ -9,6 +9,7 @@
   --color06: #091b21;
 }
 
+/* Background Image */
 body {
   font-family: var(--mainText);
   background-image: url("../images/TOPOGRAPHICAL_HUGE.svg");
@@ -18,49 +19,57 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/* WanderLost*/
 h1 {
+  font-size: 60pt;
   background-image: linear-gradient(var(--color01), var(--color06));
   font-family: var(--mainText);
   color: var(--color04);
   background-color: var(--color01);
   padding: 25px;
 }
-
+/* trailMap currentWeather lodging dining */
 h3 {
+  font-size: 48pt;
   font-family: var(--mainText);
   color: var(--color04);
   background-color: var(--color01);
   padding: 25px;
   border-radius: 16px;
 }
-
+/* trailName */
 h5 {
   font-family: var(--mainText);
 }
-
+/* decorative "o" */
 span {
+  font-size: 48pt;
   font-family: var(--spanText);
   font-weight: bold;
 }
 
+span.title {
+  font-size: 72pt;
+}
+
+/* Implements map */
 #cityMapId {
   height: 600px;
   width: 700px;
 }
-
+/* Creates border radius around section of */
 #newCityMapId{
     height: 500px;
     width: 700px;
     border-radius: 16px;
 }
-
+/* searchButton */
 button {
   background-color: var(--color03);
 }
-
+/* Information panels */
 section {
-  background-color: var(--color03);
+  background-image: linear-gradient(var(--color01), var(--color03));
   border-radius: 16px;
   padding: 10px;
   border-radius: 16px;
@@ -71,6 +80,7 @@ article {
 }
 
 p {
+  font-size: 36pt;
   font-family: var(--mainText);
   background-color: var(--color02);
   padding: 10px;
@@ -92,3 +102,4 @@ figure {
 form {
     margin-top: 1.5%;
 }
+
