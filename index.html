@@ -13,83 +13,85 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@1,500&family=Spirax&display=swap"
+        rel="stylesheet">
     <!-- Foundation Compressed CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
         integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Wanderl[o]st</title>
 </head>
 
 <body>
-    <div class="medium-grid-frame">
-        <header>
-            <h1 class="text-center">
-                <i class="fas fa-hiking"></i>
-                Wanderl[o]st
-                <i class="fas fa-hiking fa-flip-horizontal"></i>
-            </h1>
-            <div class="grid-container">
-                <form id="search-form" method="POST" class="grid-x grid-margin-x grid-margin-y">
-                    <input type="search" placeholder="City or Trail System" id="cityInput"
-                        class="cell small-4 large-offset-auto">
-                    <button class="success button cell shrink">Search <i class="fas fa-search-location"></i></button>
-                </form>
-            </div>
-        </header>
-        <div class="grid-container fluid">
-            <div class="grid-x grid-margin-x grid-margin-y">
-                <div class="cell large-auto">
-                    <figcaption>
-                        <h3>Trail Map <i class="fas fa-map-signs"></i></h3></i>
-                    </figcaption>
+    <header>
+        <h1 class="text-center">
+            <i class="fas fa-hiking"></i>
+            <span class="title">W</span>anderl<span class="title">o</span>st
+            <i class="fas fa-hiking fa-flip-horizontal"></i>
+        </h1>
+        <div class="grid-container">
+            <form id="search-form" method="POST" class="grid-x grid-margin-x">
+                <input type="search" placeholder="City or Trail System" id="cityInput"
+                    class="cell small-4 large-offset-auto">
+                <button class="success button cell shrink">Search <i class="fas fa-search-location"></i></button>
+            </form>
+        </div>
+    </header>
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x grid-margin-y">
+            <div class="cell large-auto">
+                <section>
+                    <h3><span>T</span>rail <span>M</span>ap <i class="fas fa-map-signs"></i></h3></i>
                     <figure class="responsive-embed">
                         <div id="cityMapId"></div>
-                        <section>(Trail Descriptions Here) <i class="fas fa-route">
-                                <i class="fas fa-info-circle">
-                                </i></i></section>
-                        <div id="cityMapId"></div>
                     </figure>
-                </div>
-                <div class="cell large-auto">
-                    <section>
-                        <div class="" id="widget">
-                            <div id="current">
-                                <h3>Current Weather</h3>
-                                <p id="name">Name: </p>
-                                <div>
-                                    <i id="main" class=" "></i>
-                                </div>
-                                <p id="temp">Temperature: </p>
-                                <p id="humidity">Humidity: </p>
-                                <p id="wind-speed">Wind-Speed: </p>
-                                <p id="uv-index">UV-Index: </p>
-                                <figure>
-                                    (Weather Image (if we have/need one?) Here)
-                                </figure>
+                    <figcaption>
+                        <h5 id="trailName"><i class="fas fa-route"><i class="fas fa-info-circle"></i></i> Name of Trail: 
+                        </h5>
+                        <div id="miles">Miles: </div>
+                        <div id="status">Trail Status: </div>
+                        <div id="network">Trail Network: </div>
+                    </figcaption>
+                </section>
+            </div>
+            <div class="cell large-auto">
+                <section>
+                    <div class="" id="widget">
+                        <div id="current">
+                            <h3><span>C</span>urrent <span>W</span>eather</h3>
+                            <p id="name">Name: </p>
+                            <div>
+                                <i id="main" class=" "></i>
                             </div>
+                            <p id="temp">Temperature: </p>
+                            <p id="humidity">Humidity: </p>
+                            <p id="wind-speed">Wind-Speed: </p>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
             </div>
         </div>
-        <div class="grid-container fluid">
-            <article class="grid-x grid-margin-x grid-margin-y">
-                <div class="cell large-auto">
-                    <section>
-                        <h3>Lodging <i class="fas fa-bed"></i></h3>
-                    </section>
-                </div>
-                <div class="cell large-auto">
-                    <section>
-                        <h3>Dining<i class="fas fa-utensils"></i></h3>
-                    </section>
-                </div>
-            </article>
-        </div>
+        <article class="grid-x grid-margin-x grid-margin-y">
+            <div class="cell large-auto">
+                <section>
+                    <h3><span>L</span>odging (Coming Soon!) <i class="fas fa-bed"></i></h3>
+                </section>
+            </div>
+            <div class="cell large-auto">
+                <section>
+                    <h3><span>D</span>ining (Coming Soon!) <i class="fas fa-utensils"></i></h3>
+                </section>
+            </div>
+        </article>
     </div>
     </div>
 </body>
 <script src="assets/js/main.js"></script>
+<script type="text/js" src="assets/js/file.json"></script>
+<script type="text/js" src="assets/js/city.json"></script>
 
 </html>
