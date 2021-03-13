@@ -18,6 +18,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--color06);
 }
 /* WanderLost*/
 h1 {
@@ -79,7 +80,7 @@ article {
   padding: 10px;
 }
 
-p {
+.weatherI {
   font-size: 36pt;
   font-family: var(--mainText);
   background-color: var(--color02);
@@ -103,3 +104,17 @@ form {
     margin-top: 1.5%;
 }
 
+footer {
+  background-image: linear-gradient(var(--color06), var(--color01));
+  padding: 1em;
+  margin-top: 16px;
+}
+
+.footerText {
+  padding: 10px;
+  text-align: center;
+  color: var(--color03);
+  font-size: 18pt;
+  margin: 8px;
+  line-height: 100%;
+}
