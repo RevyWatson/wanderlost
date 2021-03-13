@@ -64,10 +64,10 @@ function getTrails() {
       let status = data["features"][0]["attributes"]["Status"];
       let network = data["features"][0]["attributes"]["Trail_Network"];
       // data implementation for trail information on webpage
-      document.getElementById("trailName").innerHTML = name;
-      document.getElementById("miles").innerHTML = "Miles: " + miles;
-      document.getElementById("status").innerHTML = "Status: " + status;
-      document.getElementById("network").innerHTML =
+      //document.getElementById("trailName").innerHTML = name;
+      //document.getElementById("miles").innerHTML = "Miles: " + miles;
+      //document.getElementById("status").innerHTML = "Status: " + status;
+      //document.getElementById("network").innerHTML =
         "Trail Network: " + network;
 
       console.log(miles, name, status, network);
@@ -76,11 +76,31 @@ function getTrails() {
 
       for (let i = 0, l = data.features.length; i < l; i++){
       //let test = data["features"][i]["geometry"]["paths"][0][0];
-      var lon = data["features"][i]["geometry"]["paths"][0][0][0];
-      var lat = data["features"][i]["geometry"]["paths"][0][0][1];
-      var markerLoc = [lat,lon];
-      var marker = new L.Marker(markerLoc)
+      let lon = data["features"][i]["geometry"]["paths"][0][0][0];
+      let lat = data["features"][i]["geometry"]["paths"][0][0][1];
+
+      let name = data["features"][i]["attributes"]["Hiking_Name"];
+
+      let markerLoc = [lat,lon];
+      let marker = new L.Marker(markerLoc)
+
       userMap.addLayer(marker);
+      marker.bindPopup(name);
+
+      //For displaying on page
+
+      let miles = data["features"][i]["attributes"]["Miles"];
+      let status = data["features"][i]["attributes"]["Status"];
+      let network = data["features"][i]["attributes"]["Trail_Network"];
+
+      marker.addEventListener("click", function(){
+        
+      document.getElementById("trailName").innerHTML = name;
+      document.getElementById("miles").innerHTML = "Miles: " + miles;
+      document.getElementById("status").innerHTML = "Status: " + status;
+      document.getElementById("network").innerHTML =
+        "Trail Network: " + network;
+      });
       
       //console.log(test);
     
