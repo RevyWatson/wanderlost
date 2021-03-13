@@ -40,14 +40,12 @@ function getApi(userCity) {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+//
 function getTrails() {
   console.log();
   //Trail Data
   const trailData =
     "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/open_Trails/FeatureServer/1/query?where=1%3D1&outFields=State_Designated_Trail,Status,Hiking,Hiking_Name,Trail_Network,Miles,Shape__Length&geometry=-119.054%2C38.557%2C-55.773%2C49.561&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&f=json";
-  let trailNameEl = document.getElementById("trailName");
-  //let trailMiles =trailNameEl.value;
 
   fetch(trailData, {
     method: "GET",
@@ -58,41 +56,34 @@ function getTrails() {
       console.log(data);
       console.log(trailData);
 
-      //data retrieval for trail information
-      let miles = data["features"][0]["attributes"]["Miles"];
-      let name = data["features"][0]["attributes"]["Hiking_Name"];
-      let status = data["features"][0]["attributes"]["Status"];
-      let network = data["features"][0]["attributes"]["Trail_Network"];
-      // data implementation for trail information on webpage
-      //document.getElementById("trailName").innerHTML = name;
-      //document.getElementById("miles").innerHTML = "Miles: " + miles;
-      //document.getElementById("status").innerHTML = "Status: " + status;
-      //document.getElementById("network").innerHTML =
-        "Trail Network: " + network;
-
-      console.log(miles, name, status, network);
-
-    //For Loop for getting lat/lon and adding markers
-
+      //For Loop for getting lat/lon, and adding markers from "trailData"
       for (let i = 0, l = data.features.length; i < l; i++){
-      //let test = data["features"][i]["geometry"]["paths"][0][0];
+
+      //Calling all the Lat's and Lon's from array
       let lon = data["features"][i]["geometry"]["paths"][0][0][0];
       let lat = data["features"][i]["geometry"]["paths"][0][0][1];
 
+      //Calling all Hiking Name's from array
       let name = data["features"][i]["attributes"]["Hiking_Name"];
 
+      //Grouping Lat and Lon variables
       let markerLoc = [lat,lon];
+      //Adding markers to all the Lat's and Lon's (aka: the Location)
       let marker = new L.Marker(markerLoc)
 
-      userMap.addLayer(marker);
+      //Adding a click pop up to the markers
+      //Displays name
       marker.bindPopup(name);
 
-      //For displaying on page
+      //Adding "marker" to Leaflet Map
+      userMap.addLayer(marker);
 
+      //For displaying on page
       let miles = data["features"][i]["attributes"]["Miles"];
       let status = data["features"][i]["attributes"]["Status"];
       let network = data["features"][i]["attributes"]["Trail_Network"];
-
+      
+      //Add Click Listner for clicked markers
       marker.addEventListener("click", function(){
         
       document.getElementById("trailName").innerHTML = name;
@@ -101,18 +92,14 @@ function getTrails() {
       document.getElementById("network").innerHTML =
         "Trail Network: " + network;
       });
-      
-      //console.log(test);
     
       }
     })
     .catch(function (error) {
       console.log(error);
-
       
     });
 }
-      
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -183,7 +170,7 @@ function getApi(userCity) {
       userMap.setView([newLat, newLong], zoom);
 
       document.getElementById("name").innerHTML = "Name: " + nameVal;
-      console.log("nameVal");
+      //console.log("nameVal");
       document.getElementById("temp").innerHTML =
         "Tempature: " + tempVal + "°F";
       document.getElementById("humidity").innerHTML =
