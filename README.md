@@ -1,7 +1,9 @@
 # Project-1: Wanderlost
 This is the first collaberative group assigmnent from the Full Stack Web Development [MSU Coding Boot Camp](https://bootcamp.msu.edu/coding/landing/?s=Google-Brand_RFull_&msg_cv_scta=4&msg_cv_stbn=1&msg_cv_fcta=1&fqvar1=3&dki=Learn%20Coding&pkw=msu%20coding%20bootcamp&pcrid=471460105653&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CMICHIGAN-STATE-UNIVERSITY%7CSEM%7CCODING%7C-%7COFL%7C_RFull_%7CALL%7CBRD%7CEXACT%7CCore%7CBootcamp&utm_term=msu%20coding%20bootcamp&s=google&k=msu%20coding%20bootcamp&utm_adgroupid=106134459970&utm_locationphysicalms=9016918&utm_matchtype=e&utm_network=g&utm_device=c&utm_content=471460105653&utm_placement=&gclid=Cj0KCQiA-OeBBhDiARIsADyBcE7Y_HuK3nbJPvfuQNXFO-pcYTApJovFYDJxTBtxpXeIn_4tCA74fnYaAqoAEALw_wcB&gclsrc=aw.ds). Our group was tasked with creating a fully functional application and presenting it to our peers.
 
-![Screenshot (50)](https://user-images.githubusercontent.com/76264693/110888651-9cbb9880-82ba-11eb-9b27-127176620191.png)
+![project01_01](https://user-images.githubusercontent.com/76264693/111017465-bd025a80-8381-11eb-84f3-3dc7cee91ad4.png)
+![project01_02](https://user-images.githubusercontent.com/76264693/111017466-bf64b480-8381-11eb-84f3-ae7efc251175.png)
+![project01_03](https://user-images.githubusercontent.com/76264693/111017470-c12e7800-8381-11eb-9ece-d5200057fc7d.png)
 
 ## Project Acceptance Criteria
 * Must use a CSS framework other than Bootstrap.
@@ -16,10 +18,10 @@ This is the first collaberative group assigmnent from the Full Stack Web Develop
 * There should be a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 ## User Story
-As a hiker and or outdoor adventurer,
-I want to locate trails on a map,
-I want to see the current weather for that location,
-So that I can plan a trip accordingly.
+* As a hiker and or outdoor adventurer,
+* I want to locate trails on a map,
+* I want to see the current weather for that location,
+* So that I can plan a trip accordingly.
 
 ## Collaborators
 * [Brandon Merritt](https://github.com/CrispyCoder817)

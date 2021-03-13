@@ -179,13 +179,13 @@ function getApi(userCity) {
 
       //create weather icons
 
-      if (windVal > 5) {
-        document.getElementById("main").className = "fas fa-wind";
-        document.getElementById("main").innerHTML = "Feels windy";
-      } else {
-        document.getElementById("main").className = "fas fa-sun";
-        document.getElementById("main").innerHTML = "Feels nice";
-      }
+      // if (windVal > 5) {
+      //   document.getElementById("main").className = "fas fa-wind";
+      //   document.getElementById("main").innerHTML = "Feels windy";
+      // } else {
+      //   document.getElementById("main").className = "fas fa-sun";
+      //   document.getElementById("main").innerHTML = "Feels nice";
+      // }
     })
 
     .catch(function (error) {
