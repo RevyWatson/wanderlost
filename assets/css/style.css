@@ -22,7 +22,7 @@ body {
 }
 /* WanderLost*/
 h1 {
-  font-size: 42pt;
+  font-size: 30pt;
   background-image: linear-gradient(var(--color01), var(--color06));
   font-family: var(--mainText);
   color: var(--color04);
@@ -32,7 +32,7 @@ h1 {
 /* trailMap currentWeather lodging dining */
 h3 {
   text-align: center;
-  font-size: 36pt;
+  font-size: 24pt;
   font-family: var(--mainText);
   color: var(--color04);
   background-color: var(--color01);
@@ -51,7 +51,7 @@ span {
 }
 
 span.title {
-  font-size: 60pt;
+  font-size: 30pt;
 }
 
 /* Implements map */
@@ -82,7 +82,7 @@ article {
 }
 
 .weatherI {
-  font-size: 24pt;
+  font-size: 16pt;
   font-family: var(--mainText);
   background-color: var(--color02);
   padding: 10px;
