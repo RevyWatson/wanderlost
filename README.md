@@ -36,4 +36,4 @@ This application was built using dynamic HTML, CSS, and is powered by JavaScript
 After a long day of hiking and exploring adventurers always look forward to a good meal and having a safe comfortable place to sleep. That’s why in the future we'd like this application to include a search option for nearby lodging (hotels, motels, camping, airbnb, etc) and local dining options. Perhaps even add a feature finder. Initially we had hoped to have a larger scope for our trail search. We have hopes of expanding this application to locate trails on a national or even global scope. Ideally we’d also love to include extensive trail maps, a photo of the trail head and trail reviews.
 
 
-Wanderl**o**t: https://dracon75.github.io/Project-1/
+Wanderl**o**st: https://dracon75.github.io/Project-1/
